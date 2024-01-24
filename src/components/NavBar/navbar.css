@@ -1,0 +1,104 @@
+/*Css part for thw wholw navabar*/
+.navbar{
+    background: rgb(30, 30, 30);
+    height: 4rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+/*Css part for the logo at the nav bar*/
+.logo{
+    object-fit: cover;
+    height: 3 rem;
+    width: 4rem;
+    backface-visibility: hidden;
+}
+/*for the all list items in nav bar*/
+.dekstopMenuListItems{
+    margin: 2rem;
+    cursor: pointer;
+}
+/*and hovering on those items*/
+.dekstopMenuListItems:hover{
+    color:rgb(0, 225, 255);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(0, 225, 255);
+    font-size: 120%;
+}
+/*for the buttton at teh end of the navabar*/
+.dekstopMenubtn{
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    border-radius: 2rem;
+
+}
+/*for the menu image controling*/
+.dekstopMenuImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+
+}
+/*for the whole mobile menu*/
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+/*hightligiting the active mobile bar items*/
+.active{
+    color: aqua;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid aqua;
+}
+/*css aprt for the navigation menu*/
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(74, 73, 73);
+    border-radius: 1rem;
+}
+/*Items in the mobile bar*/
+.listItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+}
+.listItem:hover{
+    color:rgb(0, 225, 255);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(0, 225, 255);
+    font-size: 100%;
+}
+/*making mobile menu responsive*/
+@media screen and (max-width : 780px) {
+    .mobMenu{
+        display: flex;
+    }
+    .dekstopMenu{
+        display: none;
+    }
+    .dekstopMenubtn{
+        display: none;
+    }
+}

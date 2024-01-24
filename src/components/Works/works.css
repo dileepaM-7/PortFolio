@@ -1,0 +1,55 @@
+/*Css part for the main works section*/
+#works{
+    margin: 0 auto;
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+/*css for the work title*/
+.worksTitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+
+}
+/*works disctription css part*/
+.worksDesc{
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
+}
+/*all the images*/
+.worksImgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+}
+/*css part images one by one*/
+.workImg{
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.75rem;
+}
+/*the seemore button*/
+.workBtn{
+    margin: 3rem;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+}
+/*making the cell responsive*/
+@media screen and (max-width:560px) {
+    .workImg{
+        height:50vw;
+    }
+    
+}

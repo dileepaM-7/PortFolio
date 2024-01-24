@@ -1,0 +1,75 @@
+/*Cssnfor the whole skill section*/
+#skills{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+/*css for the tittle of the skill section*/
+.skillTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 5rem;
+    margin-bottom: 1rem;
+}
+/*css of about the skills */
+.skillDesc{
+    font-weight: 400;
+    font-size: 0.9rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+
+}
+/*css for the all of skills*/
+.skillBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+
+}
+/*CSS parts of the whole skill bar parts*/
+.skillBar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(69, 68, 68);
+
+}
+/*Changing the style in the images  in the skill bar section*/
+.skillBarImg{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+/* changing the text in the text in the skill bar section*/
+.skillBarText>p{
+    font-size: o.85rem;
+    font-weight: 200;
+}
+/*Making skill section respponsive*/
+@media screen and (max-width:720px){
+    .skillBarText>p{
+        font-size: 2vw;
+    } 
+}
+@media screen and (max-width:480px){
+    .skillBarText>p{
+        font-size: 3vw;
+    } 
+    .skillBarImg{
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+    .skillBarText>h2{
+        font-size: 5vw;
+    }
+}
+
